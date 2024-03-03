@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import dotenv from 'dotenv';
 // import { errorHandler } from './middleware/Error.js';
 import userRouter from './Routes/UserRouter.js';
@@ -34,10 +34,10 @@ app.use((req, res, next) => {
 connectDB();
 
 // other routes
-app.use('/api/users', userRouter);
+// app.use('/api/users', userRouter);
 app.use('/api/products', productsRouter);
-app.use('/api/categories', CategoryRouter);
-app.use('/api/orders', OrdersRouter);
+// app.use('/api/categories', CategoryRouter);
+// app.use('/api/orders', OrdersRouter);
 // app.use('/api/orders', Stripe);
 // app.get('/api/config/cloudnary', (req, res) => {
 //   res.send(process.env.CLOUDINARY);
